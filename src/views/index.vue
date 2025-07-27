@@ -4,12 +4,12 @@ import { ref } from 'vue'
 import Carousel from './Carousel.vue'
 
 const imageList = ref([
-  '/image-872565309.jpg',
-  '/IMG_6606.jpeg',
-  '/photo_2.jpg',
-  '/p1010478-1.jpg',
-  '672889c4dcc11.webp',
-  'YUA_0758.JPG',
+  './image-872565309.jpg',
+  './IMG_6606.jpeg',
+  './photo_2.jpg',
+  './p1010478-1.jpg',
+  './672889c4dcc11.webp',
+  './YUA_0758.JPG',
 ])
 </script>
 
