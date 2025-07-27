@@ -1,8 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import exifr from 'exifr'
+import { onMounted, ref } from 'vue'
 
-const imagePath = ref('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2600&q=80')
+const imageRef = ref<HTMLImageElement>()
+
+// const imagePath = ref('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2600&q=80')
 // const imagePath = ref('/photo_1.png')
+const imagePath = ref('/Z30_2624.JPG')
+
+// onMounted(() => {
+//   imageRef.value?.onload = () => {
+//     exifr.parse(imageRef.value).then(output => console.log(output))
+//   }
+// })
 </script>
 
 <template>
@@ -10,7 +20,7 @@ const imagePath = ref('https://images.unsplash.com/photo-1501854140801-50d016989
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 80%; height: 100%;">
       <div style="flex: 1" />
       <div class="image">
-        <img :src="imagePath">
+        <img ref="imageRef" :src="imagePath">
       </div>
       <div class="info">
         <div>
