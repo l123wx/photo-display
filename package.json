@@ -1,0 +1,26 @@
+{
+  "name": "starter-github-pages",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.5.0",
+  "description": "Quickly start a GitHub Pages project.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "eslint": "^9.14.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.10"
+  }
+}
