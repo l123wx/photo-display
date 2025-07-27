@@ -5,7 +5,6 @@ const cacheList = ref<string[]>([])
 </script>
 
 <template>
-  <img class="logo" src="/logo.gif" alt="logo">
   <router-view v-slot="{ Component, route }">
     <transition name="fade-transform" mode="out-in">
       <keep-alive :include="cacheList">
