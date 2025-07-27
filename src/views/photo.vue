@@ -8,11 +8,11 @@ const imageRef = ref<HTMLImageElement>()
 // const imagePath = ref('/photo_1.png')
 const imagePath = ref('/Z30_2624.JPG')
 
-// onMounted(() => {
-//   imageRef.value?.onload = () => {
-//     exifr.parse(imageRef.value).then(output => console.log(output))
-//   }
-// })
+onMounted(() => {
+  imageRef.value!.onload = () => {
+    exifr.parse(imageRef.value!).then((_output) => {})
+  }
+})
 </script>
 
 <template>
