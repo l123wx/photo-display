@@ -7,14 +7,14 @@ const props = defineProps<{
 }>()
 
 const makeMap = {
-  nikon: '/nikon.png',
-  canon: '/canon.png',
-  apple: '/apple.png',
-  fujifilm: '/fujifilm.png',
-  sony: '/sony.png',
-  leica: '/leica.png',
-  panasonic: '/panasonic.png',
-  olympus: '/olympus.png',
+  nikon: './nikon.png',
+  canon: './canon.png',
+  apple: './apple.png',
+  fujifilm: './fujifilm.png',
+  sony: './sony.png',
+  leica: './leica.png',
+  panasonic: './panasonic.png',
+  olympus: './olympus.png',
 }
 function getLogo(make: string) {
   if (!make)
